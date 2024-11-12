@@ -1,5 +1,11 @@
-from django.http import JsonResponse
+from rest_framework import generics
+from .models import Car
+from .serializers import CarSerializer
 
-def exemplo(request):
-    data = {"message": "Olá, esta é a minha API seguindo o padrão MTV!"}
-    return JsonResponse(data)
+class CarListCreateAPIView(generics.ListCreateAPIView):
+    queryset = Car.objects.all()
+    serializer_class = CarSerializer
+
+class CarRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Car.objects.all()
+    serializer_class = CarSerializer
