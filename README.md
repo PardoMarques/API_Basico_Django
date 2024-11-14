@@ -1,6 +1,6 @@
-# API de Gerenciamento de Carros com Django e Django REST Framework
+# API de Gerenciamento de Carros com Django e DRF
 
-Este projeto é uma API RESTful desenvolvida com **Django** e **Django REST Framework**, permitindo o gerenciamento de informações sobre carros associados a usuários registrados. A API suporta operações CRUD (Create, Read, Update, Delete) e implementa autenticação JWT para garantir a segurança das operações.
+Este projeto é uma API RESTful desenvolvida com **Django** e **Django REST Framework**, permitindo o gerenciamento de informações sobre carros associados a usuários registrados. A API suporta operações CRUD (Create, Read, Update, Delete)
 
 ---
 
@@ -10,7 +10,6 @@ Este projeto é uma API RESTful desenvolvida com **Django** e **Django REST Fram
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
-- [Estrutura do Projeto](#estrutura-do-projeto)
 - [Execução](#execução)
 - [Endpoints da API](#endpoints-da-api)
 
@@ -95,35 +94,6 @@ Aplique as migrações para criar as tabelas no banco de dados:
 ```bash
 python manage.py migrate
 ```
-
----
-
-## Estrutura do Projeto
-
-├── core/
-│ ├── **init**.py
-│ ├── asgi.py
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── api/
-│ ├── **init**.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── permissions.py
-│ ├── serializers.py
-│ ├── urls.py
-│ ├── views/
-│ │ ├── **init**.py
-│ │ ├── car_views.py
-│ │ └── user_views.py
-│ └── migrations/
-│ ├── **init**.py
-│ └── 0001_initial.py
-├── manage.py
-├── requirements.txt
-└── README.md
 
 ---
 
