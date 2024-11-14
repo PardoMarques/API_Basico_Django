@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
 
     # Aplicações Locais
+    'rest_framework',
+    'rest_framework_simplejwt',
     'api',
 ]
 
